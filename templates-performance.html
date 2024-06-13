@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Database Performance Metrics</h2>
+    <p>Monitor and analyze the performance metrics of your database in real-time.</p>
+    
+    <div class="metrics">
+        <h3>Current Metrics:</h3>
+        <div id="metrics-dashboard">
+            <!-- Placeholder for real-time performance metrics -->
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="metrics-table-body">
+                    <!-- Dynamic content will be loaded here -->
+                    <tr>
+                        <td colspan="3">Loading metrics...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="history">
+        <h3>Performance History:</h3>
+        <div id="history-chart">
+            <!-- Placeholder for performance history chart -->
+            <p>Loading performance history...</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
